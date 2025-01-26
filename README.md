@@ -4,12 +4,17 @@ This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: <https://quarkus.io/>.
 
-## How to create the project
+## How to Create the Project
 You can leverage the `START CODING` in the Quarkus official site ([here](https://code.quarkus.io/)):
 
 <img src="https://github.com/user-attachments/assets/5a026c5c-6f3b-4681-a4d9-862454ab9fe3" width="700" alt="">
 
 Make sure what kind of dependencies you need.
+
+## Fetch the Sample Database
+For simplicity, please refer to [restsql/mysql-sakila](https://hub.docker.com/r/restsql/mysql-sakila/) on docker hub.
+In this repo, the image has already been configured in the docker-compose.yml,
+you can directly launch it before running the app.
 
 ## Install Graal VM
 Please visit Graal VM [official site](https://www.graalvm.org/) for installation instructions
@@ -34,7 +39,7 @@ Substrate VM GraalVM CE 17.0.9+9.1 (build 17.0.9+9, serial gc)
 Now you can perform the native build.
 
 
-## Running the application in dev mode
+## Running the Application in Dev Mode
 
 You can run your app in dev mode that enables live coding using:
 
@@ -65,7 +70,7 @@ The default port is: ``5005``
 
 > **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at <http://localhost:8080/q/dev/>.
 
-## Packaging and running the application
+## Packaging and Running the Application
 
 The application can be packaged using:
 
@@ -86,7 +91,7 @@ If you want to build an _über-jar_, execute the following command:
 
 The application, packaged as an _über-jar_, is now runnable using `java -jar target/*-runner.jar`.
 
-## Creating a native executable
+## Creating a Native Executable
 
 You can create a native executable using:
 
