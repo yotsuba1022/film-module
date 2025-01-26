@@ -1,0 +1,7 @@
+services:
+  sakila:
+    image: restsql/mysql-sakila
+    container_name: sakila
+    ports:
+      - "3306:3306"
+    platform: linux/amd64
