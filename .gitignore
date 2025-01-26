@@ -45,4 +45,7 @@ nb-configuration.xml
 .certs/
 
 # Native build
-src/main/docker/
+*.jvm
+*.legacy-jar
+*.native
+*.native-micro
